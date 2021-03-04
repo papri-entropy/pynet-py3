@@ -21,6 +21,7 @@ show_version = "*0        CISCO881-SEC-K9       FTX0000038X    "
 
 show_ver_clean = show_version.strip()
 
+#print(show_version)
 #print(repr(show_ver_clean))
 
 model = show_ver_clean.split()[1]
