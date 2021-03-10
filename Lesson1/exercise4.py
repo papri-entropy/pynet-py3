@@ -1,4 +1,4 @@
-#!/usr/bin/enn python
+#!/usr/bin/env python
 
 """
  4. Create a show_version variable that contains the following
