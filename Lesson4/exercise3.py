@@ -1,7 +1,9 @@
 #!/usr/bin/env python
 
 """
- 3.  Read in the 'show_version.txt' file. From this file, use regular expressions to extract the OS version, serial number, and configuration register values.
+ 3.  Read in the 'show_version.txt' file. From this file, 
+ 
+ use regular expressions to extract the OS version, serial number, and configuration register values.
 
 Your output should look as follows:
 
@@ -16,13 +18,13 @@ from pprint import pprint
 with open('show_version.txt') as f:
     output = f.read()
 
-os_version = re.search(r"Version(\s.+),", output).group(1).strip()
+os_version = re.search(r"^Cisco.*Version (.+),.*", output).group(1)
 print(f"OS Version: {os_version}") 
 
-ser_number = re.search(r"CISCO881-SEC-K9(\s.+)", output).group(1).strip()
+ser_number = re.search(r"^\*0\s+(\S+)\s+(.*)", output, flags=re.M).group(2)
 print(f"Serial Number: {ser_number}")
 
-conf_register = re.search(r"Configuration register is(\s.+)", output).group(1).strip()
+conf_register = re.search(r"^Configuration register is (.*)$", output, flags=re.M).group(1)
 print(f"Config Register: {conf_register}")
 
 
