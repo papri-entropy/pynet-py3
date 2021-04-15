@@ -7,4 +7,6 @@ prompt.
 Repeat this, but with three device's
 """
 
+"""
 this exercise was done on linux test box with connectivity to arista
+"""
