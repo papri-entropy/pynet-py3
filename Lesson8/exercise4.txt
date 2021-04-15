@@ -1,0 +1,17 @@
+##########
+
+a. Activate your 'test_venv' virtual environment
+
+b. Use pip to uninstall the Netmiko library
+
+c. Verify Netmiko is no longer installed
+
+d. Use pip to install the 'develop' branch of Netmiko.
+
+##########
+
+
+pip uninstall netmiko
+
+pip install git+https://github.com/ktbyers/netmiko.git@develop
+

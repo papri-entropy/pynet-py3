@@ -1,0 +1,15 @@
+########
+
+a. Using the same 'test_venv' that you created in exercise2. Install netmiko version 2.0.1. Verify
+this version is installed by executing the following from the Python shell
+
+>>> import netmiko
+>>> netmiko.__version__
+'2.0.1'
+
+
+b. Using pip upgrade your version of Netmiko to the latest version.
+
+c. Deactivate your virtual environment. See 'which python' is now being used.
+
+########

@@ -1,0 +1,16 @@
+##########
+
+a. Create a new virtual environment on your system named 'test_venv'.
+
+b. Activate the virtual environment
+
+c. Use 'which python' to see the path of the Python that you are using.
+
+d. Use 'pip list' to see the packages you have installed.
+
+e. Use pip to install Netmiko and the requests library.
+
+f. Use 'pip list' to see the updated list of installed packages.
+
+##########
+

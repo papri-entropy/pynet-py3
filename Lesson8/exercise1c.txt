@@ -1,0 +1,24 @@
+#########
+
+In a Python shell, try importing the 'my_devices' when my_devices.py is not in your current
+working directory.
+
+What exception do you get when you do this?
+
+Update your PYTHONPATH environment variable so that you are successfully able to import this
+module.
+
+#########
+
+>>> import my_devices
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ModuleNotFoundError: No module named 'my_devices'
+
+After Updating PYTHONPATH env variable:
+
+>>> import my_devices
+>>> my_devices.rtr1
+{'host': 'rtr1.domain.com', 'username': 'cisco', 'password': 'cisco123', 'device_type': 'cisco_ios'}
+>>> my_devices.rtr1['host']
+'rtr1.domain.com'
